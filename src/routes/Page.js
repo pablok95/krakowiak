@@ -9,11 +9,13 @@ import ErrorPage from '../pages/ErrorPage';
 import OfferPage from '../pages/OfferPage';
 
 
-const Page = () => {
+const Page = props => {
+    const {lang} = props;
+
     return (
         <main>
             <Switch>
-                <Route exact path="/" component={HomePage} />
+                <Route exact path="/" component={()=><HomePage lang={lang} />} />
                 <Route exact path="/hotel" component={AboutPage} />
                 <Route path="/oferta" component={OfferPage} />
                 <Route path="/kontakt" component={ContactPage} />

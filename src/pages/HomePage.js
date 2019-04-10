@@ -1,23 +1,16 @@
 import React from 'react';
 import { getContent } from '../utils/Utils';
+import {homePageContent} from '../content/HomePage';
 
-const HomePage = () => {
-    const whatUs = getContent('en', 'homePage', 'whatUs');
-    const hello = getContent('en', 'homePage', 'hello');
-
-    const whatUsItems = whatUs.map((item, index) =>
-        <p key={index} dangerouslySetInnerHTML={{
-            __html: item }} />
-    )
+const HomePage = props => {
+    
+    const content = getContent(homePageContent, props.lang);
+    const {welcome} = content;
 
     return (
         <div>
-            <h1>{hello.title}</h1>
-            <h3>{hello.header}</h3>
-            <div dangerouslySetInnerHTML={{
-                __html: hello.text
-            }} />
-            {whatUsItems}
+            {welcome.text1}
+            <b>{welcome.text2}</b>
         </div>
     );
 }
