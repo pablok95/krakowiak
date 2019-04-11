@@ -1,0 +1,12 @@
+.header-bar {
+    height: 35px;
+    line-height: 35px;
+    background-color: $primary-bg-color;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: right;
+}
+
+.header-bar .fa-map-marker-alt {
+    margin-right: 5px;
+}

@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import Page from './Page';
+import Navigation from '../layout/Navigation';
 
 class App extends Component {
   constructor(props) {
@@ -17,6 +18,7 @@ class App extends Component {
       <div className="App">
         <Router>
           <Header />
+          <Navigation />
           <Page lang={this.state.lang} />
         </Router>
         <Footer />
