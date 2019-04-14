@@ -2,15 +2,8 @@ import React, { Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
 import logo from '../images/logo.png';
-import { getOffset } from '../utils/Utils';
-
-const navItems = [
-    { link: "/", title: "Strona główna" },
-    { link: "/hotel", title: "Hotel" },
-    { link: "/pokoje", title: "Pokoje" },
-    { link: "/oferta", title: "Oferta" },
-    { link: "/kontakt", title: "Kontakt" },
-];
+import { getOffset, getContent } from '../utils/Utils';
+import {navigationContent} from '../content/navigationContent';
 
 class Navigation extends Component {
     constructor(props) {
@@ -43,6 +36,8 @@ class Navigation extends Component {
     };
 
     render() {
+        const navItems = getContent(navigationContent, this.props.lang);
+
         const navListItem = navItems.map((item, index) =>
             <li key={index}>
                 <NavLink

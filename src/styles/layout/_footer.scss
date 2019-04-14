@@ -1,0 +1,44 @@
+.footer {
+  background-color: $primary-bg-color;
+}
+
+.footer .content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 240px;
+  padding: 30px 0;
+
+  @media ($medium) {
+      height: 260px;
+      padding: 50px 0;
+  }
+}
+
+.footer .content .image {
+  max-width: 200px;
+
+  @media ($medium) {
+      max-width: 240px;
+  }
+}
+.footer .content .footer-nav-list {
+    text-align: center;
+    margin: 0;
+
+    li {
+        padding: 0 10px 10px 10px;
+        display: inline-block;
+    }
+
+    a {
+        color: #ffffff;
+    }
+}
+
+.footer .footer-info, .footer .footer-info a {
+    color: $secondary-txt-color;
+    font-size: 14px;
+}

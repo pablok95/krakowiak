@@ -1,52 +1,136 @@
 .slider img {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 40%;
-    transform: translate(-50%, 0);
-    z-index: -1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  transform: translate(-50%, 0);
+  z-index: -1;
 
-    @media ($small){
-        left: 50%;
-        width: 100%;
-        // height: auto;
-    }
+  @media ($small) {
+    left: 50%;
+    width: 100%;
+    // height: auto;
+  }
 }
 
 .slider {
-    position: relative;
-    overflow: hidden;
-    height: 50vh;
-    // background-color: red;
-    @media ($small) {
-        height: 55vw;
-        max-height: 800px;
-    }
+  position: relative;
+  overflow: hidden;
+  height: 50vh;
+  // background-color: red;
+  @media ($small) {
+    height: 55vw;
+    max-height: 800px;
+  }
 }
 
 .main-content {
-    z-index: 1;
-    margin-top: -30vw;
+  z-index: 1;
+  margin-top: -30vw;
 
-    @media ($small) {
-        margin-top: -15vw;
-    }
+  @media ($small) {
+    margin-top: -15vw;
+  }
 
-    @media ($medium) {
-        margin-top: -200px;
-    }
+  @media ($medium) {
+    margin-top: -200px;
+  }
 }
 
 .welcome .content {
-    background-color: $secondary-bg-color;
-    color: #ffffff;
-    padding: 15px;
+  background-color: $secondary-bg-color;
+  color: #ffffff;
+  padding: 15px;
 
-    .title, .subtitle {
-        text-align: center;
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+
+  .text {
+    text-align: justify;
+  }
+}
+
+// Section What Make Us Diffrent
+// Items
+
+.what-make-us-diffrent .items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    @media ($medium) {
+      width: 25%;
     }
 
-    .text {
-        text-align: justify;
+    .content {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2.5vw;
+      box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      width: 42vw;
+      height: 180px;
+      margin-bottom: 15px;
+
+      b {
+          display: inline-block;
+      }
+
+      @media ($small) {
+        padding: 0 20px;
+        width: 220px;
+        height: 170px;
+      }
+
+      @media ($medium) {
+        padding: 10px;
+        width: 140px;
+        height: 180px;
+      }
+
+      @media ($large) {
+        padding: 10px;
+        width: 190px;
+        height: 180px;
+        margin-bottom: 30px;
+      }
+
+      @media ($xlarge) {
+        padding: 20px;
+        width: 220px;
+        height: 200px;
+        margin-bottom: 40px;
+      }
+
+      .item-img {
+        margin-bottom: 15px;
+        max-width: 50px;
+
+        @media ($xlarge) {
+          max-width: none;
+        }
+      }
+
+      .item-name {
+        font-size: 12px;
+
+        @media ($large) {
+          font-size: 14px;
+        }
+      }
     }
+  }
 }

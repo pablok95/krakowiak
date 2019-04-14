@@ -8,7 +8,7 @@ import Navigation from '../layout/Navigation';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state={
+    this.state = {
       lang: 'pl',
     }
   }
@@ -18,10 +18,10 @@ class App extends Component {
       <div className="App">
         <Router>
           <Header />
-          <Navigation />
+          <Navigation lang={this.state.lang} />
           <Page lang={this.state.lang} />
+          <Footer lang={this.state.lang} />
         </Router>
-        <Footer />
       </div>
     );
   }

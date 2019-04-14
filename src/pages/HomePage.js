@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import { getContent } from '../utils/Utils';
-import { homePageContent } from '../content/HomePage';
-import { getOffset, getViewportHeight} from '../utils/Utils';
+import { homePageContent } from '../content/homePageContent';
+import { getOffset, getViewportHeight } from '../utils/Utils';
 
 import image from '../images/slider.png';
+import WhatMakeUsDiffrent from '../layout/WhatMakeUsDiffrent';
+import AboutUs from '../layout/AboutUs';
+import OurOffer from '../layout/OurOffer';
+import BanquetHall from '../layout/BanquetHall';
+import BirthdayForChildren from '../layout/BirthdayForChildren';
+import ContactUs from '../layout/ContactUs';
 
 class HomePage extends Component {
 
@@ -16,7 +22,7 @@ class HomePage extends Component {
         const pageHeight = getViewportHeight();
 
         const elem = document.getElementById('parralax-el');
-        if(elem !== null) {
+        if (elem !== null) {
             const elOffset = elem.offsetTop;
             const elHeight = elem.offsetHeight;
 
@@ -31,7 +37,7 @@ class HomePage extends Component {
         const { welcome } = content;
 
         return (
-            <div style={{ height: '200vh' }}>
+            <div>
                 <div id="parralax" className="slider">
                     <img id="parralax-el" src={image} alt="slider" />
                 </div>
@@ -48,13 +54,16 @@ class HomePage extends Component {
                             </div>
                         </div>
                     </section>
-                    <section>
-                        <h2>Co nas wyróżnia</h2>
-                    </section>
-                </main>
 
-                {welcome.text1}
-                <b>{welcome.text2}</b>
+                    <WhatMakeUsDiffrent
+                        content={content.whatMakeUsDiffrent}
+                    />
+                    <AboutUs content={content.aboutUs} />
+                    <OurOffer />
+                    <BanquetHall content={content.banquetHall} />
+                    <BirthdayForChildren content={content.birthdayForChildren} />
+                    <ContactUs />
+                </main>
             </div>
         );
     }

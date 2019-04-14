@@ -1,0 +1,37 @@
+.header-title {
+  position: relative;
+  margin-top: 50px;
+  overflow: hidden;
+
+  @media ($medium) {
+    margin-top: 70px;
+  }
+
+  .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -9;
+  }
+
+  .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      min-height: 480px;
+      text-align: center;
+      color: #ffffff;
+
+      @media ($small) {
+          min-height: 400px;
+      }
+
+      @media ($medium) {
+          min-height: 360px;
+      }
+  }
+}
