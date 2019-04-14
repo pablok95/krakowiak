@@ -7,8 +7,8 @@ import logo from '../images/footer-logo.png';
 
 const Footer = props => {
     const navItems = getContent(navigationContent, props.lang);
-    const navListItems = navItems.map(item =>
-        <li>
+    const navListItems = navItems.map((item, index) =>
+        <li key={index}>
             <Link to={item.link} title={item.title}>{item.title}</Link>
         </li>
     );

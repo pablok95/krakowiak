@@ -7,6 +7,14 @@
     margin-top: 70px;
   }
 
+  .section-title {
+    margin-bottom: 25px;
+
+    @media ($medium) {
+        margin-bottom: 30px;
+    }
+  }
+
   .image {
     position: absolute;
     top: 50%;

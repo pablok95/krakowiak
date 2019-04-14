@@ -1,0 +1,19 @@
+.contact-us {
+    text-align: center;
+}
+
+.contact-us .content {
+    position: relative;
+    text-align: left;
+}
+
+.contact-us .contact-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-15px);
+}
+
+.contact-us .contact-text, .contact-us .contact-larger-text {
+    display: block;
+}

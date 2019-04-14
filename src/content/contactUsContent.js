@@ -9,6 +9,12 @@ export const contactUsContent = {
         labelPhoneText: 'Telefon',
         labelEmailText: 'E-mail',
         labelMessageText: 'Wiadomość',
-        btnText1: 'Wyślij wiadomość'
+        btnText1: 'Wyślij wiadomość',
+        phone1: '000 000 000',
+        phone2: '100 100 100',
+        phone3: '200 200 200',
+        email: 'krakowiaktravel@gmail.com',
+        short_address: 'J. Smoleńskiego 110',
+        long_address: 'ul. Armii Krajowej 9-9a, 30-150 Kraków',
     },
 };
