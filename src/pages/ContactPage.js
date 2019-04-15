@@ -7,7 +7,7 @@ import ContactUs from '../layout/ContactUs';
 
 const ContactPage = ({ lang }) => {
     const content = getContent(contactPageContent, lang);
-    const { title, description, findUsTitle } = content;
+    const { title, description } = content;
 
     return (
         <div>

@@ -62,7 +62,7 @@ class HomePage extends Component {
                     <OurOffer />
                     <BanquetHall content={content.banquetHall} />
                     <BirthdayForChildren content={content.birthdayForChildren} />
-                    <ContactUs />
+                    <ContactUs lang={this.props.lang} />
                 </main>
             </div>
         );

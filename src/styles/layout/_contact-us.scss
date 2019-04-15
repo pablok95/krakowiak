@@ -1,19 +1,154 @@
 .contact-us {
-    text-align: center;
+  text-align: center;
+
+  .section-title::after {
+    max-width: 150px;
+    width: 24.5%;
+  }
+}
+
+.contact-us, .contact-us a {
+    color: #ffffff;
+}
+
+.contact-us .section-subtitle {
+    color: $basic-color;
 }
 
 .contact-us .content {
-    position: relative;
-    text-align: left;
+  position: relative;
+  margin-top: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
 }
 
 .contact-us .contact-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-15px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, -20px);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+
+  @media ($medium) {
+      font-size: 14px;
+  }
 }
 
-.contact-us .contact-text, .contact-us .contact-larger-text {
-    display: block;
+.contact-us .icon-wrapper {
+  position: relative;
+  background-color: $basic-color;
+  font-size: 24px;
+  height: 42px;
+  width: 42px;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 50%;
+
+  @media ($medium) {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+  }
+
+  .fas {
+    color: $primary-txt-color;
+  }
+
+  .fa-phone-volume {
+    transform: rotate(-45deg) translate(2px, 1px);
+  }
+}
+
+.contact-us .contact-larger-text,
+.contact-us .contact-text {
+  margin: 0;
+  font-family: $font-serif2;
+  font-weight: 900;
+}
+
+.contact-us .contact-larger-text {
+  position: relative;
+  margin-left: 10px;
+  font-size: 24px;
+
+  @media ($small) {
+      font-size: 19px;
+  }
+
+  @media ($medium) {
+    font-size: 28px;
+  }
+
+  @media ($large) {
+    font-size: 36px;
+    margin-left: 15px;
+  }
+
+  @media ($xlarge) {
+    font-size: 42px;
+    margin-left: 15px;
+  }
+}
+
+.contact-us .other-wrapper {
+  padding-left: 10vw;
+
+  @media ($small) {
+    padding-left: 0;
+  }
+
+  .content {
+    margin-top: 45px;
+
+    @media ($small) {
+      justify-content: center;
+    }
+
+    @media ($medium) {
+      justify-content: flex-start;
+      padding-left: 25px;
+    }
+
+    @media ($large) {
+        padding-left: 65px;
+    }
+  }
+
+  .contact-text {
+    font-size: 16px;
+
+    @media ($small) {
+        font-size: 19px;
+    }
+
+    @media ($large) {
+        font-size: 20px;
+    }
+
+    @media ($xlarge) {
+        font-size: 24px;
+    }
+  }
+
+  .contact-label {
+    @media ($small) {
+      text-align: center;
+      width: auto;
+      left: 50%;
+      transform: translate(-50%,-20px);
+    }
+
+    @media ($medium) {
+      text-align: left;
+      left: 25px;
+      transform: translate(0, -20px);
+    }
+
+    @media ($large) {
+        left: 65px;
+    }
+  }
 }
