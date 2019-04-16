@@ -1,15 +1,15 @@
 import React from 'react';
 import SectionWithBackground from '../components/SectionWithBackground';
+import image from '../images/home-page/struktura-pokoi.png';
 
 
 
 const AboutUs = ({ content }) => {
-    console.log(content);
 
     const htmlContent = (
         <div className="content">
-            <h2 className="title">{content.title}</h2>
-            <h3 className="subtitle">{content.subtitle}</h3>
+            <h2 className="section-title hightlighting-line">{content.title}</h2>
+            <h3 className="section-subtitle">{content.subtitle}</h3>
             <p className="text">{content.text1}</p>
             <p className="text">{content.text2}</p>
             <p className="text">{content.text3}</p>
@@ -17,7 +17,7 @@ const AboutUs = ({ content }) => {
     )
 
     return (
-        <SectionWithBackground content={htmlContent} />
+        <SectionWithBackground content={htmlContent} image={image} />
     );
 }
 

@@ -11,8 +11,27 @@
     color: #ffffff;
 }
 
+.contact-us .section-title {
+  @media ($large) {
+    margin-bottom: 5px;
+  }
+}
+
 .contact-us .section-subtitle {
     color: $basic-color;
+    margin-bottom: 25px;
+
+    @media ($medium) {
+      margin-bottom: 30px;
+    }
+
+    @media ($large) {
+      margin-bottom: 40px;
+    }
+
+    @media ($xlarge) {
+      margin-bottom: 50px;
+    }
 }
 
 .contact-us .content {

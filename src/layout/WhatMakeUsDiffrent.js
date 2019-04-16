@@ -17,9 +17,11 @@ const WhatMakeUsDiffrent = ({ content }) => {
     })
 
     return (
-        <section className="what-make-us-diffrent">
+        <section className="what-make-us-diffrent section-padding">
             <div className="container">
-                <h2>{content.title}</h2>
+                <div className="title-wrapper">
+                    <h2 className="section-title hightlighting-line">{content.title}</h2>
+                </div>
                 <div className="items-wrapper">
                     {items}
                 </div>

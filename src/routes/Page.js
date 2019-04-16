@@ -20,7 +20,7 @@ const Page = props => {
                 <Route path="/hotel" component={() => <AboutPage lang={lang} />} />
                 <Route path="/oferta" component={() => <OfferPage lang={lang} />} />
                 <Route path="/kontakt" component={() => <ContactPage lang={lang} />} />
-                <Route path="/pokoje" component={() => <Rooms lang={lang} />} />
+                <Route path="/pokoje" exact component={() => <Rooms lang={lang} />} />
                 <Route path="/pokoje/:pokoj" component={Room} />
                 <Route path="/polityka-prywatnosci" component={PrivacyPolicy} />
                 <Route component={ErrorPage} />

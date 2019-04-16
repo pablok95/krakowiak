@@ -1,0 +1,196 @@
+.our-offer {
+  .hightlighting-line::after {
+    width: 26%;
+  }
+
+  .title-wrapper {
+    margin-bottom: 5px;
+
+    @media ($small) {
+      margin-bottom: 15px;
+    }
+
+    @media ($medium) {
+      margin-bottom: 25px;
+    }
+
+    @media ($large) {
+      margin-bottom: 30px;
+    }
+
+    @media ($xlarge) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.banquet-hall,
+.birthday-for-children {
+  padding-top: 30px;
+
+  @media ($small) {
+    padding-top: 40px;
+  }
+
+  @media ($medium) {
+    padding-top: 50px;
+  }
+
+  @media ($large) {
+    padding-top: 70px;
+  }
+
+  @media ($xlarge) {
+    padding-top: 80px;
+  }
+
+  .text {
+    font-family: $font-serif2;
+    font-weight: 400;
+  }
+
+  .section-title {
+    padding-left: 0;
+    margin-bottom: 10px;
+    font-size: 28px;
+
+    @media ($small) {
+      font-size: 32px;
+    }
+
+    @media ($medium) {
+      font-size: 30px;
+    }
+
+    @media ($large) {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    @media ($xlarge) {
+      font-size: 36px;
+    }
+  }
+
+  .col-md-6 {
+    @media ($medium) {
+      padding: 0;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+    @media ($medium) {
+      height: 420px;
+    }
+
+    @media ($large) {
+      height: 500px;
+    }
+
+    @media ($xlarge) {
+      height: 460px;
+    }
+  }
+
+  .img-wrapper {
+    display: none;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+
+    @media ($medium) {
+      display: block;
+    }
+  }
+
+  .img-wrapper img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.banquet-hall {
+  .hightlighting-line::after {
+    width: 21%;
+  }
+
+  .content {
+    @media ($medium) {
+      padding-left: 20px;
+    }
+    @media ($large) {
+      padding-left: 10px;
+    }
+    @media ($xlarge) {
+      padding-left: 20px;
+    }
+  }
+
+  .img-wrapper {
+    @media ($medium) {
+      margin-right: 20px;
+    }
+
+    @media ($xlarge) {
+      margin-right: 70px;
+    }
+  }
+}
+
+.birthday-for-children {
+  padding-bottom: 30px;
+
+  @media ($small) {
+    padding-bottom: 40px;
+  }
+
+  @media ($medium) {
+    padding-bottom: 50px;
+  }
+
+  @media ($large) {
+    padding-bottom: 70px;
+  }
+
+  @media ($xlarge) {
+    padding-bottom: 80px;
+  }
+
+  .hightlighting-line::after {
+    width: 30%;
+  }
+
+  .content {
+    @media ($medium) {
+      padding-right: 20px;
+    }
+    @media ($large) {
+      padding-right: 10px;
+    }
+    @media ($xlarge) {
+      padding-right: 40px;
+    }
+  }
+
+  .img-wrapper {
+    @media ($medium) {
+      margin-left: 20px;
+    }
+    @media ($xlarge) {
+      margin-left: 30px;
+    }
+  }
+}

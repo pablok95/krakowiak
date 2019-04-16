@@ -13,7 +13,8 @@ import icon8 from '../images/items/8.png';
 export const homePageContent = {
     pl: {
         welcome: {
-            title: 'Serdecznie witamy w hotelu Krakowiak Travel',
+            hotel_name: 'Krakowiak Travel',
+            title: 'Serdecznie witamy w hotelu',
             subtitle: 'Mamy nadzieję dołożyć wszelkich starań, aby Państwa pobyt w naszym hotelu był w pełni satysfakcjonujący.',
             text1: 'Hotel Krakowiak Travel położony jest w Krakowie przy ul. Jerzego Smoleńskiego 110, zaraz obok ul. Zakopiańskiej. Oddalony jest zaledwie 10 km od Rynku Głównego i 18 km od Portu Lotniczego Balice. Bliskość obwodnicy Krakowa A4 zapewnia wygodny i szybki dostęp do Wieliczki, jset to zaledwie 12 minut.',
             text2: 'Dzięki tej lokalizacji Nasi goście mogą w szybki i komfortowy sposób dostać się zarówno w kierunku Tatr, jak i wschodniej i zachodniej części Polski, łączonej przez autostradę.',

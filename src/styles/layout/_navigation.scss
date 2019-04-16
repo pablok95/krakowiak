@@ -43,15 +43,15 @@ $navbar-height-lg: 70px;
 
   @media ($medium) {
     display: block;
-    width: 60%;
+    width: 65%;
   }
 
   @media ($large) {
-    width: 55%;
+    width: 60%;
   }
 
   @media ($xlarge) {
-    width: 45%;
+    width: 50%;
   }
 }
 
@@ -75,9 +75,14 @@ $navbar-height-lg: 70px;
   color: $menu-txt-color;
   transition: .3s linear;
   outline: none;
+  font-weight: 500;
+
+  @media ($medium) {
+    font-size: 14px;
+  }
 
   @media ($large) {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 

@@ -3,13 +3,7 @@ import React from 'react';
 
 const SectionTitle = ({ title }) => {
     return (
-        <h2
-            className="section-title"
-            style={{
-                after: {
-                    maxWidth: '100px'
-                }
-            }}>
+        <h2 className="section-title hightlighting-line">
             {title}
         </h2>
     );

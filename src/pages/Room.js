@@ -3,8 +3,8 @@ import React from 'react';
 
 const Room = () => {
     return (
-        <div>
-            Room
+        <div style={{margin: '200px'}}>
+            Room asdokdaspodkp
         </div>
     );
 }

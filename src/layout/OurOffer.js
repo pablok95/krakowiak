@@ -1,11 +1,22 @@
 import React from 'react';
+import {getContent} from '../utils/Utils';
+import {roomsContent} from '../content/roomsContent';
+import OurOfferItems from './OurOfferItems';
 
+const OurOffer = ({lang, title, subtitle}) => {
+    const content = getContent(roomsContent, lang);
 
-const OurOffer = () => {
     return (
-        <section className="out-offer">
+        <section className="our-offer section-padding">
             <div className="container">
-                <h2>Nasza oferta</h2>
+                <div className="content">
+                    <div className="title-wrapper">
+                        <h2 className="section-title hightlighting-line">{title}</h2>
+                        <h3 className="section-subtitle">{subtitle}</h3>
+                    </div>
+
+                    <OurOfferItems content={content} />
+                </div>
             </div>
         </section>
     );

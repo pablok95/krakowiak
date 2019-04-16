@@ -1,0 +1,93 @@
+.welcome .content {
+  background-color: $secondary-bg-color;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+
+  @media ($small) {
+    padding: 20px 25px;
+  }
+
+  @media ($medium) {
+    padding: 30px 50px;
+  }
+
+  @media ($large) {
+    padding: 40px 90px;
+  }
+
+  @media ($xlarge) {
+    padding: 50px 125px;
+  }
+
+  .hotel-name {
+    display: inline-block;
+    padding: 0 5px 5px 5px;
+  }
+
+  .hightlighting-line::after {
+    width: 99%;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: inline-block;
+    overflow: hidden;
+
+    @media ($small) {
+      font-size: 28px;
+    }
+
+    @media ($medium) {
+      font-size: 30px;
+    }
+
+    @media ($xlarge) {
+      font-size: 34px;
+    }
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: 600;
+
+    @media ($small) {
+      font-size: 18px;
+    }
+
+    @media ($large) {
+      font-size: 20px;
+    }
+
+    @media ($xlarge) {
+      font-size: 22px;
+    }
+  }
+
+  .text {
+    text-align: justify;
+  }
+}
+
+.welcome .hightlighting-line::after {
+  width: 60%;
+}
+
+.welcome .hightlighting-line:hover::after {
+  transform: translate(8px, -7px);
+}
+
+.welcome .hightlighting-line:hover::after {
+    transform: translate(8px, -9px);
+
+    @media ($small) {
+        transform: translate(8px, -12px);
+    }
+
+    @media ($large) {
+        transform: translate(8px, -10px);
+    }
+}
