@@ -10,7 +10,7 @@ const OurOfferItems = ({ content }) => {
             <div key={room.id} className="our-offer-item">
                 <div className="content">
                     <div className="room-image-wrapper">
-                        <img className="room-image" src={room.image} alt={room.slug} />
+                        <img className="room-image" src={room.image_sm} alt={room.slug} />
                     </div>
                     <div className="room-info">
                         <h3 className="room-title">{room.name}</h3>
