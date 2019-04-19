@@ -33,7 +33,7 @@ const OfferPage = props => {
     );
 
     return (
-        <div className="">
+        <div id="offer-page">
             <HeaderTitle title={header.title} description={header.description} imageSrc={headerImg} />
             <OfferSection imageSrc={image} section={section} />
             <SectionWithBackground imageSrc={offerImg} content={htmlContent} />

@@ -1,0 +1,41 @@
+#offer-section .offer-section-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+
+    @media ($xlarge) {
+        padding-right: 40px;
+    }
+}
+
+#offer-section .img-wrapper {
+    display: none;
+    overflow: hidden;
+
+    @media ($medium) {
+        display: block;
+        height: 500px;
+        transform: translateX(15px);
+    }
+
+    @media ($large) {
+        height: 400px;
+    }
+
+    @media ($xlarge) {
+        height: 500px;
+    }
+}
+
+#offer-section .image {
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    height: 100%;
+
+    @media ($xlarge) {
+        height: auto;
+        width: 100%;
+    }
+}
