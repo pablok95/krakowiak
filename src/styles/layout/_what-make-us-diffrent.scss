@@ -1,0 +1,75 @@
+#what-make-us-diffrent .what-make-us-diffrent-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0 auto 15px;
+    height: 165px;
+    max-width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #ccc;
+    background-color: #fff;
+    text-align: center;
+
+    @media ($small) {
+        margin: 0 15px 25px;
+        height: 140px;
+        max-width: none;
+        box-shadow: 0 0 80px #ccc;
+    }
+
+    @media ($medium) {
+        height: 160px;
+        margin: 0 0 25px;
+    }
+
+    @media ($large) {
+        margin: 0 15px 30px;
+        height: 180px;
+    }
+
+    @media ($xlarge) {
+        height: 190px;
+        margin: 0 20px 40px;
+        padding: 30px 35px;
+    }
+}
+
+#what-make-us-diffrent .what-make-us-diffrent-item {
+
+    &:nth-last-child(1), &:nth-last-child(2) {
+        .what-make-us-diffrent-content {
+            margin-bottom: 0;
+        }
+    }
+
+    @media ($medium) {
+        &:nth-last-child(3), &:nth-last-child(4) {
+            .what-make-us-diffrent-content {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+#what-make-us-diffrent .what-make-us-diffrent-image {
+    margin-bottom: 5px;
+    max-width: 60px;
+    max-height: 50px;
+
+    @media ($large) {
+        margin-bottom: 10px;
+        max-width: none;
+        max-height: none;
+    }
+}
+
+#what-make-us-diffrent .what-make-us-diffrent-name {
+    font-size: 12px;
+    width: 100%;
+
+    @media ($large) {
+        font-size: 14px;
+    }
+}

@@ -15,14 +15,14 @@ import Welcome from '../layout/Welcome';
 class HomePage extends Component {
 
     componentDidMount() {
-        window.addEventListener('scroll', this.parralaxEfect, false);
+        window.addEventListener('scroll', this.parallaxEfect, false);
     }
 
-    parralaxEfect = (e) => {
+    parallaxEfect = (e) => {
         const offset = getOffset();
         const pageHeight = getViewportHeight();
 
-        const elem = document.getElementById('parralax-el');
+        const elem = document.getElementById('parallax-el');
         if (elem !== null) {
             const elOffset = elem.offsetTop;
             const elHeight = elem.offsetHeight;
@@ -37,9 +37,9 @@ class HomePage extends Component {
         const content = getContent(homePageContent, this.props.lang);
 
         return (
-            <div>
-                <div id="parralax" className="slider">
-                    <img id="parralax-el" src={image} alt="slider" />
+            <div id="home-page">
+                <div id="parallax" className="parallax">
+                    <img id="parallax-el" className="parallax-el" src={image} alt="slider" />
                 </div>
 
                 <main className="main-content">

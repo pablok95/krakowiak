@@ -3,14 +3,14 @@ import React from 'react';
 
 const Welcome = ({content}) => {
     return (
-        <section className="welcome">
+        <section id="welcome">
             <div className="container">
-                <div className="content">
-                    <h2 className="title">{content.title} <span className="hotel-name hightlighting-line">{content.hotel_name}</span></h2>
-                    <h3 className="subtitle">{content.subtitle}</h3>
-                    <p className="text">{content.text1}</p>
-                    <p className="text bold-text">{content.text2}</p>
-                    <p className="text">{content.text3}</p>
+                <div className="welcome-content">
+                    <h2 className="welcome-title">{content.title} <strong className="d-inline-block">{content.hotel_name}</strong></h2>
+                    <h3 className="welcome-subtitle">{content.subtitle}</h3>
+                    <p className="welcome-text">{content.text1}</p>
+                    <p className="welcome-text">{content.text2}</p>
+                    <p className="welcome-text">{content.text3}</p>
                 </div>
             </div>
         </section>

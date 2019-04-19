@@ -1,173 +1,113 @@
-.contact-us {
-  text-align: center;
-
-  .section-title::after {
-    max-width: 150px;
-    width: 24.5%;
-  }
+#contact-us {
+  font-family: $font-serif;
+  color: #ffffff;
 }
 
-.contact-us, .contact-us a {
-    color: #ffffff;
-}
+#contact-us .contact-label {
+  display: block;
+  font-size: 12px;
 
-.contact-us .section-title {
   @media ($large) {
-    margin-bottom: 5px;
+    font-size: 14px;
   }
 }
 
-.contact-us .section-subtitle {
-    color: $basic-color;
-    margin-bottom: 25px;
+#contact-us .contact-data-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    @media ($medium) {
-      margin-bottom: 30px;
+  @media ($medium) {
+    justify-content: flex-start;
+    height: 50px;
+  }
+}
+
+#contact-us .contact-data-info {
+  margin: 0 0 0 10px;
+
+  .phone {
+    display: block;
+  }
+
+  .phone,
+  .address {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+
+    @media ($small) {
+      font-size: 21px;
     }
 
     @media ($large) {
-      margin-bottom: 40px;
+        font-size: 32px;
     }
 
     @media ($xlarge) {
-      margin-bottom: 50px;
+        font-size: 38px;
     }
-}
-
-.contact-us .content {
-  position: relative;
-  margin-top: 20px;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-}
-
-.contact-us .contact-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(0, -20px);
-  font-size: 12px;
-  font-weight: 600;
-  text-align: left;
-
-  @media ($medium) {
-      font-size: 14px;
   }
 }
 
-.contact-us .icon-wrapper {
-  position: relative;
+#contact-us .icon-wrapper {
   background-color: $basic-color;
-  font-size: 24px;
-  height: 42px;
-  width: 42px;
-  line-height: 42px;
-  text-align: center;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
   border-radius: 50%;
+  text-align: center;
 
-  @media ($medium) {
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
+  @media ($large) {
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
   }
 
   .fas {
-    color: $primary-txt-color;
+    @media ($large) {
+      font-size: 24px;
+      height: 100%;
+      width: 100%;
+      line-height: 42px;
+    }
   }
 
   .fa-phone-volume {
-    transform: rotate(-45deg) translate(2px, 1px);
+    transform: rotate(-45deg);
+    transform-origin: center;
   }
 }
 
-.contact-us .contact-larger-text,
-.contact-us .contact-text {
-  margin: 0;
-  font-family: $font-serif2;
-  font-weight: 900;
-}
-
-.contact-us .contact-larger-text {
-  position: relative;
-  margin-left: 10px;
-  font-size: 24px;
-
-  @media ($small) {
-      font-size: 19px;
-  }
+#contact-us .content {
+  text-align: center;
 
   @media ($medium) {
-    font-size: 28px;
+    text-align: left;
+    padding-left: 42px;
   }
 
   @media ($large) {
-    font-size: 36px;
-    margin-left: 15px;
-  }
-
-  @media ($xlarge) {
-    font-size: 42px;
-    margin-left: 15px;
+    text-align: left;
+    padding-left: 52px;
   }
 }
 
-.contact-us .other-wrapper {
-  padding-left: 10vw;
+#contact-us .link {
+  color: #ffffff;
+  font-weight: 900;
+  display: inline-block;
+  vertical-align: middle;
+}
 
-  @media ($small) {
-    padding-left: 0;
+#contact-us .contact-other-wrapper .link {
+  font-size: 18px;
+
+  @media ($medium) {
+    font-size: 20px;
   }
 
-  .content {
-    margin-top: 45px;
-
-    @media ($small) {
-      justify-content: center;
-    }
-
-    @media ($medium) {
-      justify-content: flex-start;
-      padding-left: 25px;
-    }
-
-    @media ($large) {
-        padding-left: 65px;
-    }
-  }
-
-  .contact-text {
-    font-size: 16px;
-
-    @media ($small) {
-        font-size: 19px;
-    }
-
-    @media ($large) {
-        font-size: 20px;
-    }
-
-    @media ($xlarge) {
-        font-size: 24px;
-    }
-  }
-
-  .contact-label {
-    @media ($small) {
-      text-align: center;
-      width: auto;
-      left: 50%;
-      transform: translate(-50%,-20px);
-    }
-
-    @media ($medium) {
-      text-align: left;
-      left: 25px;
-      transform: translate(0, -20px);
-    }
-
-    @media ($large) {
-        left: 65px;
-    }
+  @media ($xlarge) {
+    font-size: 22px;
   }
 }

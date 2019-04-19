@@ -1,0 +1,74 @@
+.party-room .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    @media ($medium) {
+        min-height: 450px;
+    }
+
+    @media ($large) {
+        min-height: 500px;
+    }
+}
+
+#banquet-hall .content {
+    @media ($medium) {
+        padding-left: 15px;
+    }
+    @media ($xlarge) {
+        padding-left: 30px;
+    }
+}
+
+#birthday-for-children .content {
+    @media ($medium) {
+        padding-right: 15px;
+    }
+
+    @media ($xlarge) {
+        padding-right: 30px;
+    }
+}
+
+#banquet-hall .img-wrapper {
+    transform: translateX(-15px);
+}
+
+#birthday-for-children .img-wrapper {
+    transform: translateX(15px);
+}
+
+.party-room .img-wrapper {
+    height: 100%;
+    overflow: hidden;
+
+    .image {
+        height: 100%;
+
+        @media ($xlarge) {
+            top: 50%;
+            transform: translateY(-50%);
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+.party-room .title {
+    font-weight: 900;
+    font-family: $font-serif;
+    font-size: 28px;
+
+    @media ($large) {
+        font-size: 36px;
+    }
+
+    @media ($xlarge) {
+        font-size: 42px;
+    }
+}
+
+.party-room .text {
+    text-align: left;
+}

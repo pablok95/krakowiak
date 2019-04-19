@@ -1,21 +1,18 @@
 import React from 'react';
+import SectionTitleWrapper from './SectionTitleWrapper';
 
 const HeaderTitle = props => {
     const { title, description, imageSrc } = props;
     return (
-        <header className="header-title">
-            <img className="image" src={imageSrc} alt="header_image" />
-            <div className="container">
-                <div className="row">
-                    <div className="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                        <div className="content">
-                            <h1 className="title section-title">{title}</h1>
-                            {description && <p className="description" dangerouslySetInnerHTML={{
-                                __html: description
-                            }} />}
-                        </div>
-                    </div>
-                </div>
+        <header id="header-title">
+            <div className="img-wrapper">
+                <img className="image" src={imageSrc} alt="header_image" />
+            </div>
+            <div className="header-title-content">
+                <SectionTitleWrapper title={title} />
+                {description && <p className="text" dangerouslySetInnerHTML={{
+                    __html: description
+                }} />}
             </div>
         </header>
     );

@@ -1,14 +1,15 @@
 import React from 'react';
+import SectionTitleWrapper from '../components/SectionTitleWrapper';
 
 
 const WhatMakeUsDiffrent = ({ content }) => {
 
     const items = content.items.map((item, index)=> {
         return (
-            <div key={index} className="item">
-                <div className="content">
-                    <img className="item-img" src={item.imgSrc} alt={item.name} />
-                    <div className="item-name" dangerouslySetInnerHTML={{
+            <div key={index} className="col-6 col-md-3 what-make-us-diffrent-item">
+                <div className="what-make-us-diffrent-content">
+                    <img className="what-make-us-diffrent-image" src={item.imgSrc} alt={item.name} />
+                    <div className="what-make-us-diffrent-name" dangerouslySetInnerHTML={{
                         __html: item.name
                     }} />
                 </div>
@@ -17,12 +18,10 @@ const WhatMakeUsDiffrent = ({ content }) => {
     })
 
     return (
-        <section className="what-make-us-diffrent section-padding">
+        <section id="what-make-us-diffrent">
             <div className="container">
-                <div className="title-wrapper">
-                    <h2 className="section-title hightlighting-line">{content.title}</h2>
-                </div>
-                <div className="items-wrapper">
+                <SectionTitleWrapper title={content.title} />
+                <div className="row">
                     {items}
                 </div>
             </div>

@@ -1,115 +1,87 @@
-.contact-form {
-  text-align: left;
-  margin-top: 20px;
-
-  @media ($medium) {
-    margin-top: 30px;
-  }
-
-  .btn-1 {
-    margin: 15px auto 0 auto;
-
-    @media ($medium) {
-      margin: 20px 0 0 auto;
-    }
-  }
-}
-
-.form-label {
-  font-weight: 700;
-  font-size: 12px;
-  color: $secondary-txt-color;
-}
-
-.form-items-group {
-  margin-top: 20px;
-
-  @media ($large) {
-    margin-top: 25px;
-  }
-
-  @media ($xlarge) {
-    margin-top: 30px;
-  }
-}
-
-.form-items-group input.form-item,
-.form-items-group textarea.form-item {
-  width: 100%;
-  border-radius: 0;
-  outline: none;
-  border: 1px solid $border-form-color;
-  background-color: $secondary-bg-color;
-  color: #ffffff;
-  font-family: $font-serif2;
-  padding: 10px 15px;
-  transition: 0.3s linear;
-
-  &:hover {
-    box-shadow: 0 0 10px $primary-bg-color;
-  }
-
-  &:focus {
-    border-color: $basic-color;
-  }
-}
-
-.contact-form input[type="checkbox"] {
-  position: absolute;
-  margin-top: 4px;
-  opacity: 0;
-}
-
-.form-agreement-group {
-  display: flex;
-
-  .form-label {
-    width: calc(100% - 25px);
-    margin-left: 15px;
-    font-weight: 600;
-    text-align: justify;
-    cursor: pointer;
-
-    @media ($medium) {
-      padding: 0 50px 0 0;
-    }
-  }
-}
-
-.agreement-checkbox {
-  position: relative;
-  height: 20px;
-  width: 20px;
-  border: 1px solid $border-form-color;
-  background-color: $secondary-bg-color;
-  color: #ffffff;
-  margin-top: 4px;
-  cursor: pointer;
-  transition: 0.3s linear;
-
-  @media ($medium) {
-    margin-left: 20px;
-  }
-
-  i {
+#contact-form .form-label, #contact-form .form-agree-label {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 10px;
     font-size: 12px;
+    font-weight: 600;
+    font-family: $font-sans-serif;
+    text-align: justify;
+    color: $secondary-txt-color;
+
+    @media ($large) {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
+
+#contact-form .form-text-input:focus, #contact-form .form-textarea:focus, #contact-form .form-agree-checkbox.focus {
+    border-color: $basic-color;
+}
+
+#contact-form .form-text-input, #contact-form .form-textarea, #contact-form .form-agree-checkbox {
+    &:hover {
+        border-color: $basic-color;
+        opacity: .8;
+    }
+}
+
+#contact-form .form-text-input, #contact-form .form-textarea {
+    border: 1px solid $border-form-color;
+    border-radius: 0;
+    outline: none;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: $secondary-bg-color;
+    color: #ffffff;
+    font-weight: 700;
+
+    @media ($large) {
+        padding: 8px 15px;
+    }
+}
+
+
+#contact-form #agreement {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &:hover {
-    box-shadow: 0 0 10px $primary-bg-color;
-  }
+    top: 0;
+    left: 0;
+    opacity: 0;
 }
 
-.agreement-checkbox.active {
-  background-color: $basic-color;
-  border-color: $basic-color;
-  color: $primary-bg-color;
+#contact-form .form-agree-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+    @media ($medium) {
+        padding: 0 15px;
+    }
 }
 
-.agreement-checkbox.focus {
-  border-color: $basic-color;
+#contact-form .form-agree-checkbox {
+    display: inline-block;
+    margin-top: 6px;
+    margin-right: 15px;
+    height: 24px;
+    width: 24px;
+    background-color: $secondary-bg-color;
+    border: 1px solid $border-form-color;
+    text-align: center;
+    opacity: .9;
+    cursor: pointer;
+}
+
+#contact-form .form-agree-checkbox.active {
+    background-color: $basic-color;
+    color: $primary-txt-color;
+    border-color: $basic-color;
+}
+
+#contact-form .form-agree-label {
+    width: calc(100% - 40px);
+    margin: 0;
+}
+
+#contact-form .btn-1 {
+    margin: 0 0 0 auto;
 }

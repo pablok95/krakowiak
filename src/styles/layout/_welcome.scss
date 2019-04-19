@@ -1,93 +1,81 @@
-.welcome .content {
-  background-color: $secondary-bg-color;
-  color: #ffffff;
-  padding: 15px;
-  text-align: center;
+#welcome {
+    margin-top: -20vw;
 
-  @media ($small) {
-    padding: 20px 25px;
-  }
+    @media ($medium) {
+        margin-top: -15vw;
+    }
 
-  @media ($medium) {
-    padding: 30px 50px;
-  }
+    @media ($large) {
+        margin-top: -12vw;
+    }
 
-  @media ($large) {
-    padding: 40px 90px;
-  }
+    @media ($xlarge) {
+        margin-top: -8vw;
+    }
+}
 
-  @media ($xlarge) {
-    padding: 50px 125px;
-  }
-
-  .hotel-name {
-    display: inline-block;
-    padding: 0 5px 5px 5px;
-  }
-
-  .hightlighting-line::after {
-    width: 99%;
-  }
-
-  .title {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    display: inline-block;
-    overflow: hidden;
+#welcome .welcome-content {
+    background: $primary-bg-color;
+    color: #ffffff;
+    padding: 15px;
 
     @media ($small) {
-      font-size: 28px;
+        padding: 20px 30px;
     }
 
     @media ($medium) {
-      font-size: 30px;
-    }
-
-    @media ($xlarge) {
-      font-size: 34px;
-    }
-  }
-
-  .subtitle {
-    font-size: 16px;
-    margin-bottom: 25px;
-    font-weight: 600;
-
-    @media ($small) {
-      font-size: 18px;
+        padding: 30px 40px;
     }
 
     @media ($large) {
-      font-size: 20px;
+        padding: 40px 60px;
+    }
+
+    @media ($large) {
+        padding: 60px 110px;
+    }
+}
+
+#welcome .welcome-title, #welcome .welcome-subtitle {
+    text-align: center;
+}
+
+#welcome .welcome-title {
+    font-size: 24px;
+    font-family: $font-serif;
+    font-weight: 900;
+
+    @media ($large) {
+        font-size: 36px;
     }
 
     @media ($xlarge) {
-      font-size: 22px;
+        font-size: 42px;
     }
-  }
+}
 
-  .text {
+#welcome .welcome-subtitle {
+    font-size: 18px;
+    font-family: $font-serif;
+
+    @media ($large) {
+        font-size: 22px;
+    }
+
+    @media ($xlarge) {
+        font-size: 24px;
+    }
+}
+
+#welcome .welcome-text {
+    font-size: 14px;
     text-align: justify;
-  }
-}
-
-.welcome .hightlighting-line::after {
-  width: 60%;
-}
-
-.welcome .hightlighting-line:hover::after {
-  transform: translate(8px, -7px);
-}
-
-.welcome .hightlighting-line:hover::after {
-    transform: translate(8px, -9px);
-
-    @media ($small) {
-        transform: translate(8px, -12px);
-    }
 
     @media ($large) {
-        transform: translate(8px, -10px);
+        font-size: 16px;
     }
+}
+
+#welcome .welcome-text:last-of-type {
+    margin: 0;
 }

@@ -2,9 +2,15 @@ import React from 'react';
 import HeaderTitle from '../components/HeaderTitle';
 import { getContent } from '../utils/Utils';
 import { aboutPageContent } from '../content/aboutPageContent';
+
 import SectionWithBackground from '../components/SectionWithBackground';
 import Gallery from '../components/Gallery';
-import image from '../images/slider.png';
+import SectionTitleWrapper from '../components/SectionTitleWrapper';
+
+import headerImg from '../images/about-page/header.png';
+import image from '../images/about-page/1.png';
+import offerImg from '../images/about-page/struktura-pokoi.png';
+import OfferSection from '../layout/OfferSection';
 
 
 const AboutPage = props => {
@@ -12,42 +18,25 @@ const AboutPage = props => {
     const { header, section, offerSection } = content;
 
     const offerListItems = offerSection.items.map((item, index) =>
-        <li key={index}>{item.name}</li>
+        <li key={index}>* {item.name}</li>
     );
 
     const htmlContent = (
-        <div className="content">
-            <h2 className="title">{offerSection.title}</h2>
-            <h3 className="subtitle">{offerSection.subtitle}:</h3>
-            <ul className="list-offer">
+        <div className="section-with-background-content">
+            <SectionTitleWrapper title={offerSection.title} subtitle={offerSection.subtitle} />
+            <ul className="section-with-bgc-list">
                 {offerListItems}
             </ul>
         </div>
     );
 
     return (
-        <div>
-            <HeaderTitle title={header.title} description={header.description} imageSrc={image} />
+        <div id="about-page">
+            <HeaderTitle title={header.title} description={header.description} imageSrc={headerImg} />
 
-            <section>
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-12 col-md-6">
-                            <div className="content">
-                                <p>{section.text1}</p>
-                                <p>{section.text2}</p>
-                            </div>
-                        </div>
-                        <div className="col-12 col-md-6">
-                            <div className="img-wrapper">
-                                <img src="" alt="hotel_image" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <OfferSection imageSrc={image} section={section} />
 
-            <SectionWithBackground content={htmlContent} />
+            <SectionWithBackground imageSrc={offerImg} content={htmlContent} />
             <Gallery />
         </div>
     );

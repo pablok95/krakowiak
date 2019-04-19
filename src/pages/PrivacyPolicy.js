@@ -3,7 +3,7 @@ import React from 'react';
 
 const PrivacyPolicy = () => {
     return (
-        <div>
+        <div id="privacy-policy-page">
             Polityka prywatności
         </div>
     );

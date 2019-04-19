@@ -1,6 +1,11 @@
-.section-with-background {
-    position: relative;
+#section-with-background .section-with-background-content {
     color: #ffffff;
-    background-color: $about-us-bg;
+}
+
+#section-with-background .section-with-background-content .text {
+    text-align: center;
+}
+
+#section-with-background .section-with-bgc-list {
     text-align: center;
 }

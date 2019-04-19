@@ -9,20 +9,20 @@ const Footer = props => {
     const navItems = getContent(navigationContent, props.lang);
     const navListItems = navItems.map((item, index) =>
         <li key={index}>
-            <Link to={item.link} title={item.title}>{item.title}</Link>
+            <Link className="link" to={item.link} title={item.title}>{item.title}</Link>
         </li>
     );
 
     return (
-        <footer className="footer">
+        <footer id="footer">
             <div className="container">
                 <div className="content">
                     <img className="image" src={logo} alt="logo" />
-                    <ul className="footer-nav-list">
+                    <ul className="footer-nav-items">
                         {navListItems}
                     </ul>
                     <span className="footer-info">
-                        <Link to="/polityka-prywatnosci" title="Polityka prywatności">Polityka prywatności</Link> / Copyright @2019
+                        <Link className="link" to="/polityka-prywatnosci" title="Polityka prywatności">Polityka prywatności</Link> | Copyright @2019
                     </span>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-const SectionWithBackground = ({content, image}) => {
+const SectionWithBackground = ({ content, imageSrc}) => {
     return (
-        <section className="section-with-background section-padding" style={{backgroundImage: `url("${image}")`}}>
+        <section id="section-with-background" style={{ backgroundImage: `url("${imageSrc}")`}}>
             <div className="container">
                 {content}
             </div>

@@ -1,0 +1,20 @@
+.section-title-wrapper {
+    display: block;
+    margin: 0 auto auto 10px auto;
+    text-align: center;
+    font-family: $font-serif;
+    font-weight: 900;
+}
+
+.section-title-wrapper .section__title {
+    margin: 0;
+    font-size: 28px;
+
+    @media ($medium) {
+        font-size: 34px;
+    }
+
+    @media ($xlarge) {
+        font-size: 40px;
+    }
+}

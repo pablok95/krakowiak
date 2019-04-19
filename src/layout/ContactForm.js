@@ -51,39 +51,41 @@ class ContactForm extends Component {
         const content = getContent(contactUsContent, this.props.lang);
 
         return (
-            <div className="contact-form col-10 offset-1 col-md-12 offset-md-0 col-lg-10 offset-lg-1">
-                <form onSubmit={this.handleSumbmit}>
-                    <div className="row form-row">
-                        <div className="col-12 col-md-4 form-items-group">
+            <div className="col-10 offset-1 col-md-12 offset-md-0 col-lg-10 offset-lg-1">
+                <form id="contact-form" onSubmit={this.handleSumbmit}>
+                    <div className="row">
+                        <div className="col-12 col-md-4">
                             <label className="form-label" htmlFor="firstLastName">{content.labelFirstLastNameText}</label>
-                            <input className="form-item" type="text" id="firstLastName" onChange={this.handleChange} name="firstLastName" value={this.state.name} />
+                            <input className="form-text-input" type="text" id="firstLastName" onChange={this.handleChange} name="firstLastName" value={this.state.name} />
                         </div>
-                        <div className="col-12 col-md-4 form-items-group">
+                        <div className="col-12 col-md-4">
                             <label className="form-label" htmlFor="phone">{content.labelPhoneText}</label>
-                            <input className="form-item" type="text" id="phone" onChange={this.handleChange} name="phone" value={this.state.phone} />
+                            <input className="form-text-input" type="text" id="phone" onChange={this.handleChange} name="phone" value={this.state.phone} />
                         </div>
-                        <div className="col-12 col-md-4 form-items-group">
+                        <div className="col-12 col-md-4">
                             <label className="form-label" htmlFor="email">{content.addressEmail}</label>
-                            <input className="form-item" type="text" id="email" onChange={this.handleChange} name="email" value={this.state.email} />
+                            <input className="form-text-input" type="email" id="email" onChange={this.handleChange} name="email" value={this.state.email} />
                         </div>
                     </div>
 
-                    <div className="row form-row">
-                        <div className="col-12 form-items-group">
+                    <div className="row ">
+                        <div className="col-12">
                             <label className="form-label" htmlFor="message">{content.labelMessageText}</label>
-                            <textarea className="form-item" id="message" onChange={this.handleChange} name="message" value={this.state.message} rows="5"></textarea>
+                            <textarea className="form-textarea" id="message" onChange={this.handleChange} name="message" value={this.state.message} rows="5"></textarea>
                         </div>
                     </div>
 
-                    <div className="row form-row">
-                        <div className="col-12 form-items-group form-agreement-group">
-                            <input checked={this.state.agreement} name="agreement" onFocus={this.handleFocus} onBlur={this.handleBlur} onChange={this.handleChange} type="checkbox" id="agreement" />
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="form-agree-wrapper">
+                                <input checked={this.state.agreement} name="agreement" onFocus={this.handleFocus} onBlur={this.handleBlur} onChange={this.handleChange} type="checkbox" id="agreement" />
 
-                            <div onClick={this.handleCheckboxClick}
-                                className={!this.state.agreement ? 'agreement-checkbox' : 'agreement-checkbox active'}>
-                                {this.state.agreement && <i className="fas fa-check"></i>}
+                                <div onClick={this.handleCheckboxClick}
+                                    className={!this.state.agreement ? 'form-agree-checkbox' : 'form-agree-checkbox active'}>
+                                    {this.state.agreement && <i className="fas fa-check"></i>}
+                                </div>
+                                <label className="form-agree-label" htmlFor="agreement">{content.labelAgreement}</label>
                             </div>
-                            <label className="form-label" htmlFor="agreement">{content.labelAgreement}</label>
                         </div>
                     </div>
 
