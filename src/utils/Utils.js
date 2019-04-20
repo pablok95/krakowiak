@@ -19,3 +19,16 @@ export const getViewportHeight = () => {
     var a = document.documentElement.clientHeight, b = window.innerHeight;
     return a < b ? b : a;
 }
+
+export const findElemPosY = (elem) => {
+    let curtop = 0;
+    if (elem.offsetParent) {
+        while (elem.offsetParent) {
+            curtop += elem.offsetTop;
+            elem = elem.offsetParent;
+        }
+    }
+    else if (elem.y)
+        curtop += elem.y;
+    return curtop;
+}

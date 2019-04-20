@@ -16,7 +16,7 @@ class App extends Component {
   render() {
 
     return (
-      <div className="App">
+      <div className="App" onScroll={this.handleScroll}>
         <Router>
           <Header />
           <Navigation lang={this.state.lang} />

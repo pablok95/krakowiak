@@ -88,11 +88,15 @@ class ContactForm extends Component {
                             </div>
                         </div>
                     </div>
+                    <button className="btn btn-1">
+                        <div className="btn-text">{content.btnText1}</div>
+                        <div className="btn-arrow"><i className="icon-arrow"></i></div>
+                    </button>
 
-                    <button className="btn-1">
+                    {/* <button className="btn-1">
                         {content.btnText1}
                         <div className="btn-with-arrow"><i className="arrow"></i></div>
-                    </button>
+                    </button> */}
                 </form>
             </div>
         );

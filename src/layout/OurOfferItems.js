@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 
 const OurOfferItems = ({ content }) => {
-    console.log(content)
 
     const ourOfferItem = content.rooms.map(room => {
         return (

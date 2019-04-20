@@ -3,6 +3,10 @@
   color: #ffffff;
 }
 
+#contact-us .section-subtitle {
+  color: $basic-color;
+}
+
 #contact-us .contact-label {
   display: block;
   font-size: 12px;
@@ -70,6 +74,7 @@
       height: 100%;
       width: 100%;
       line-height: 42px;
+      color: $primary-txt-color;
     }
   }
 

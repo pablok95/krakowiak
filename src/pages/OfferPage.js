@@ -20,7 +20,7 @@ const OfferPage = props => {
 
     const offerListItems = offerSection.items.map((item, index) =>
         // <li className="list-item" key={index}>* {item.name}</li>
-        <li className="what-make-us-diffrent-name" dangerouslySetInnerHTML={{
+        <li key={index} className="what-make-us-diffrent-name" dangerouslySetInnerHTML={{
             __html: "* " + item.name
         }} />
     );

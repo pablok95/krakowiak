@@ -1,79 +1,79 @@
 $btn-size: 45px;
 
-.btn-1 {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: $btn-size;
-  line-height: $btn-size;
-  outline: none;
-  border: none;
-  border: 1px solid $basic-color;
-  padding: 0;
-  padding-left: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: $font-sans-serif;
-  background-color: $primary-bg-color;
-  color: #ffffff;
-  transition: 0.3s linear;
-}
+// .btn-1 {
+//   position: relative;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   height: $btn-size;
+//   line-height: $btn-size;
+//   outline: none;
+//   border: none;
+//   border: 1px solid $basic-color;
+//   padding: 0;
+//   padding-left: 20px;
+//   font-size: 14px;
+//   font-weight: 600;
+//   font-family: $font-sans-serif;
+//   background-color: $primary-bg-color;
+//   color: #ffffff;
+//   transition: 0.3s linear;
+// }
 
-.btn-with-arrow {
-  position: relative;
-  display: inline-block;
-  background-color: $basic-color;
-  line-height: $btn-size;
-  height: $btn-size;
-  width: $btn-size;
-  margin-left: 20px;
-  overflow: hidden;
-  transition: 0.3s linear;
-}
+// .btn-with-arrow {
+//   position: relative;
+//   display: inline-block;
+//   background-color: $basic-color;
+//   line-height: $btn-size;
+//   height: $btn-size;
+//   width: $btn-size;
+//   margin-left: 20px;
+//   overflow: hidden;
+//   transition: 0.3s linear;
+// }
 
-.btn-with-arrow .arrow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: rotate(0) translate(-50%, -50%);
-  width: 14px;
-  height: 1px;
-  background-color: $primary-bg-color;
+// .btn-with-arrow .arrow {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: rotate(0) translate(-50%, -50%);
+//   width: 14px;
+//   height: 1px;
+//   background-color: $primary-bg-color;
 
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    transform-origin: 100%;
-    top: 50%;
-    right: 0;
-    width: 7px;
-    height: 1px;
-    background-color: $primary-bg-color;
-    transition: 0.3s linear;
-  }
+//   &::after,
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     transform-origin: 100%;
+//     top: 50%;
+//     right: 0;
+//     width: 7px;
+//     height: 1px;
+//     background-color: $primary-bg-color;
+//     transition: 0.3s linear;
+//   }
 
-  &::after {
-    transform: rotate(45deg) translateY(-50%);
-  }
+//   &::after {
+//     transform: rotate(45deg) translateY(-50%);
+//   }
 
-  &::before {
-    transform: rotate(-45deg) translateY(-50%);
-  }
-}
+//   &::before {
+//     transform: rotate(-45deg) translateY(-50%);
+//   }
+// }
 
-.btn-1:hover {
-  background-color: $basic-color/1.05;
-  color: $primary-txt-color;
+// .btn-1:hover {
+//   background-color: $basic-color/1.05;
+//   color: $primary-txt-color;
 
-  .arrow::after {
-    transform: rotate(-45deg) translateY(-50%);
-  }
-  .arrow::before {
-    transform: rotate(45deg) translateY(-50%);
-  }
-}
+//   .arrow::after {
+//     transform: rotate(-45deg) translateY(-50%);
+//   }
+//   .arrow::before {
+//     transform: rotate(45deg) translateY(-50%);
+//   }
+// }
 
 
 
@@ -91,10 +91,12 @@ $btn-size: 45px;
   align-items: center;
   border: 1px solid;
   width: 200px;
+  padding: 0;
   overflow: hidden;
+  font-family: $font-sans-serif;
 
   @media ($large) {
-    width: 220px;
+    width: 240px;
   }
 }
 
@@ -112,7 +114,7 @@ $btn-size: 45px;
 }
 
 .btn:hover .btn-arrow {
-  background-color: #fff;
+  background-color: $basic-color*1.1;
 }
 
 .btn:hover::before {
@@ -124,13 +126,13 @@ $btn-size: 45px;
   display: inline-block;
   width: calc(200px - 40px);
   text-align: center;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 500;
   z-index: 1;
 
   @media ($large) {
-    width: calc(220px - 50px);
-    font-size: 16px;
+    width: calc(240px - 50px);
+    font-size: 14px;
   }
 }
 
@@ -177,6 +179,18 @@ $btn-size: 45px;
 
   &::before {
     transform: rotate(-45deg) translateY(-50%);
+  }
+}
+
+.btn-1 {
+  background-color: $primary-bg-color;
+  color: #fff;
+  border-color: $basic-color;
+  transition: .3s linear;
+  transition-delay: .1s;
+
+  &:hover {
+    color: $primary-txt-color;
   }
 }
 

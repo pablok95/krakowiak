@@ -1,20 +1,61 @@
 .section-title-wrapper {
     display: block;
-    margin: 0 auto auto 10px auto;
+    margin: 0 auto 20px auto;
     text-align: center;
     font-family: $font-serif;
     font-weight: 900;
-}
 
-.section-title-wrapper .section__title {
-    margin: 0;
-    font-size: 28px;
+    @media ($small) {
+        margin-bottom: 20px;
+    }
 
     @media ($medium) {
-        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    @media ($large) {
+        margin-bottom: 40px;
     }
 
     @media ($xlarge) {
+        margin-bottom: 50px;
+    }
+}
+
+.section-title-wrapper .section-title {
+    margin: 0;
+    font-size: 32px;
+
+    @media ($small) {
+        font-size: 34px;
+    }
+
+    @media ($medium) {
         font-size: 40px;
+    }
+
+    @media ($large) {
+        font-size: 46px;
+    }
+
+    @media ($xlarge) {
+        font-size: 50px;
+    }
+}
+
+.section-title-wrapper .section-subtitle {
+    font-size: 18px;
+    margin-bottom: 0;
+
+    @media ($medium) {
+        font-size: 19px;
+    }
+
+    @media ($large) {
+        font-size: 20px;
+    }
+
+    @media ($xlarge) {
+        font-size: 22px;
     }
 }

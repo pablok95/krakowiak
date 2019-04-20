@@ -9,7 +9,7 @@ const BirthdayForChildren = ({ content }) => {
                 <div className="row">
                     <div className="col-sm-10 offset-sm-1 col-md-5 offset-xl-1">
                         <div className="content">
-                            <h2 className="title">{content.title}</h2>
+                            <h2 className="title hightlighting">{content.title}</h2>
                             <p className="text">{content.text1}</p>
                             <p className="text">{content.text2}</p>
                         </div>

@@ -1,0 +1,25 @@
+.hightlighting {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px 5px 0;
+    overflow: hidden;
+    line-height: 1;
+    z-index: 1;
+}
+
+.hightlighting::after {
+content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 10px;
+    transform: translate(200%, -8px);
+    background-color: $basic-color;
+    transition: $basic-transition;
+    z-index: -1;
+}
+
+.active.hightlighting::after {
+    transform: translate(0, -8px);
+}

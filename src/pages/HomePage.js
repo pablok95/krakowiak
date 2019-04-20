@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { getContent } from '../utils/Utils';
 import { homePageContent } from '../content/homePageContent';
-import { getOffset, getViewportHeight } from '../utils/Utils';
+import { getOffset, getViewportHeight, findElemPosY } from '../utils/Utils';
 
 import image from '../images/slider.png';
 import WhatMakeUsDiffrent from '../layout/WhatMakeUsDiffrent';
@@ -16,6 +16,21 @@ class HomePage extends Component {
 
     componentDidMount() {
         window.addEventListener('scroll', this.parallaxEfect, false);
+        const elements = [...document.querySelectorAll('.hightlighting')];
+
+        window.addEventListener('scroll', () => this.handleScroll(elements), false);
+    }
+
+    handleScroll = (elements) => {
+        const scroll = getOffset() + 500;
+
+        elements.forEach(elem => {
+            if (findElemPosY(elem) <= scroll) {
+                elem.classList.add('active');
+            } else {
+                elem.classList.remove('active');
+            }
+        });
     }
 
     parallaxEfect = (e) => {
@@ -44,9 +59,7 @@ class HomePage extends Component {
 
                 <main className="main-content">
                     <Welcome content={content.welcome} />
-                    <WhatMakeUsDiffrent
-                        content={content.whatMakeUsDiffrent}
-                    />
+                    <WhatMakeUsDiffrent content={content.whatMakeUsDiffrent} />
                     <AboutUs content={content.aboutUs} />
                     <OurOffer lang={this.props.lang} title={content.ourOffer.title} subtitle={content.ourOffer.subtitle} />
                     <BanquetHall content={content.banquetHall} />
