@@ -8,8 +8,9 @@ $navbar-height-lg: 70px;
   width: 100%;
   height: $navbar-height;
   z-index: 99;
-  background-color: #fff;
+  background: #fff;
   transition: 0.3s linear;
+  will-change: transform;
 
   @media ($medium) {
     height: $navbar-height-lg;
@@ -18,7 +19,7 @@ $navbar-height-lg: 70px;
 
 .navbar.scroll {
   transform: translateY(-35px);
-  background-color: $secondary-bg-color;
+  background-color: $primary-bg-color;
 
   .bar {
     background-color: #fff;
@@ -29,7 +30,7 @@ $navbar-height-lg: 70px;
   }
 
   .logo img {
-    transform: scale(.8) translate(-12%, -11%);
+    transform: scale(.7) translate(-12%, -18%);
   }
 }
 

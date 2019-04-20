@@ -1,25 +1,73 @@
 .hightlighting {
-    position: relative;
-    display: inline-block;
-    padding: 0 5px 5px 0;
-    overflow: hidden;
-    line-height: 1;
-    z-index: 1;
+  position: relative;
+  display: inline-block;
+  padding: 0 5px 5px 0;
+  overflow: hidden;
+  line-height: 1;
+  z-index: 1;
 }
 
 .hightlighting::after {
-content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 30%;
-    height: 10px;
-    transform: translate(200%, -8px);
-    background-color: $basic-color;
-    transition: $basic-transition;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 10px;
+  background-color: $basic-color;
+  transform: translate(200%, -8px);
+  opacity: 0;
+  transition: 1s linear;
+  will-change: transform opacity;
+  z-index: -1;
 }
 
 .active.hightlighting::after {
-    transform: translate(0, -8px);
+  transform: translate(0, -8px);
+  opacity: 1;
+}
+
+#welcome .hightlighting {
+  margin-left: 8px;
+  overflow: unset;
+  line-height: 1.3;
+
+  @media ($large) {
+    line-height: 1;
+  }
+
+  &::after {
+    width: 95%;
+  }
+}
+
+#about-page .hightlighting::after {
+  width: 82%;
+}
+
+#header-title .hightlighting::after {
+  width: 79%;
+}
+
+#contact-page .hightlighting::after {
+  width: 62%;
+}
+
+#section-with-background .hightlighting::after {
+  width: 60%;
+}
+
+#what-make-us-diffrent .hightlighting::after {
+  width: 59%;
+}
+#offer-page .hightlighting::after {
+  width: 29%;
+}
+
+#our-offer .hightlighting::after {
+  width: 25%;
+}
+
+#contact-us .hightlighting::after {
+  width: 24%;
 }

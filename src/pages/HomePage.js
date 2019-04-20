@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { getContent } from '../utils/Utils';
 import { homePageContent } from '../content/homePageContent';
-import { getOffset, getViewportHeight, findElemPosY } from '../utils/Utils';
+import { getOffset, getViewportHeight } from '../utils/Utils';
+import { debounce } from 'lodash';
 
 import image from '../images/slider.png';
 import WhatMakeUsDiffrent from '../layout/WhatMakeUsDiffrent';
@@ -15,22 +16,7 @@ import Welcome from '../layout/Welcome';
 class HomePage extends Component {
 
     componentDidMount() {
-        window.addEventListener('scroll', this.parallaxEfect, false);
-        const elements = [...document.querySelectorAll('.hightlighting')];
-
-        window.addEventListener('scroll', () => this.handleScroll(elements), false);
-    }
-
-    handleScroll = (elements) => {
-        const scroll = getOffset() + 500;
-
-        elements.forEach(elem => {
-            if (findElemPosY(elem) <= scroll) {
-                elem.classList.add('active');
-            } else {
-                elem.classList.remove('active');
-            }
-        });
+        window.addEventListener('scroll', debounce(this.parallaxEfect, 5), false);
     }
 
     parallaxEfect = (e) => {

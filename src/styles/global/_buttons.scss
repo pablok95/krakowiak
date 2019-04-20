@@ -20,48 +20,48 @@ $btn-size: 45px;
 //   transition: 0.3s linear;
 // }
 
-// .btn-with-arrow {
-//   position: relative;
-//   display: inline-block;
-//   background-color: $basic-color;
-//   line-height: $btn-size;
-//   height: $btn-size;
-//   width: $btn-size;
-//   margin-left: 20px;
-//   overflow: hidden;
-//   transition: 0.3s linear;
-// }
+.btn-with-arrow {
+  position: relative;
+  display: inline-block;
+  background-color: $basic-color;
+  line-height: $btn-size;
+  height: $btn-size;
+  width: $btn-size;
+  margin-left: 20px;
+  overflow: hidden;
+  transition: 0.3s linear;
+}
 
-// .btn-with-arrow .arrow {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: rotate(0) translate(-50%, -50%);
-//   width: 14px;
-//   height: 1px;
-//   background-color: $primary-bg-color;
+.btn-with-arrow .arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(0) translate(-50%, -50%);
+  width: 14px;
+  height: 1px;
+  background-color: $primary-bg-color;
 
-//   &::after,
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     transform-origin: 100%;
-//     top: 50%;
-//     right: 0;
-//     width: 7px;
-//     height: 1px;
-//     background-color: $primary-bg-color;
-//     transition: 0.3s linear;
-//   }
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    transform-origin: 100%;
+    top: 50%;
+    right: 0;
+    width: 7px;
+    height: 1px;
+    background-color: $primary-bg-color;
+    transition: 0.3s linear;
+  }
 
-//   &::after {
-//     transform: rotate(45deg) translateY(-50%);
-//   }
+  &::after {
+    transform: rotate(45deg) translateY(-50%);
+  }
 
-//   &::before {
-//     transform: rotate(-45deg) translateY(-50%);
-//   }
-// }
+  &::before {
+    transform: rotate(-45deg) translateY(-50%);
+  }
+}
 
 // .btn-1:hover {
 //   background-color: $basic-color/1.05;

@@ -1,3 +1,6 @@
+#section-with-background .section-title-wrapper {
+    margin-bottom: 15px;
+}
 #section-with-background .section-with-background-content {
     color: #ffffff;
 }
@@ -12,9 +15,12 @@
 
 #section-with-background .list-item {
     margin-bottom: 5px;
+    font-size: 14px;
 
     @media ($large) {
         margin-bottom: 10px;
+
+        font-size: 16px;
     }
 }
 

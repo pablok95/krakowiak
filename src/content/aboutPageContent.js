@@ -12,7 +12,7 @@ export const aboutPageContent = {
 
         offerSection: {
             title: 'Oferty pobytowe',
-            subtitle: 'W najbliższym otoczeniu hotelu znajdą Państwo',
+            subtitle: 'W najbliższym otoczeniu hotelu znajdą Państwo:',
             items: [
                 {name: 'Centrum handlowe'},
                 {name: 'Myjnia samochodowa'},

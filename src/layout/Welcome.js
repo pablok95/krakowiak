@@ -7,8 +7,8 @@ const Welcome = ({ content }) => {
             <div className="container">
                 <div className="welcome-content">
                     <h2 className="welcome-title">
-                        {content.title}
-                        <strong className="d-inline-block">{content.hotel_name}</strong>
+                        <div className="d-inline-block">{content.title}</div>
+                        <strong className="d-inline-block hightlighting">{content.hotel_name}</strong>
                     </h2>
                     <h3 className="welcome-subtitle">{content.subtitle}</h3>
                     <p className="welcome-text">{content.text1}</p>

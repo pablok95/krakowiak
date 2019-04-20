@@ -34,21 +34,33 @@
     align-content: center;
 }
 
-#room-page .detail-content {
-    text-align: left;
-    line-height: 1.2;
-    padding: 4px 0;
+#room-page .room-details {
+    margin: 20px 0;
 
     @media ($small) {
-        padding: 2px 0;
+        margin: 30px 0;
     }
 
     @media ($medium) {
-        padding: 5px 0;
+        margin: 40px 0;
+    }
+}
+
+#room-page .detail-content {
+    text-align: left;
+    line-height: 1.4;
+    padding: 4px 0;
+
+    @media ($small) {
+        padding: 4px 0;
+    }
+
+    @media ($medium) {
+        padding: 8px 0;
     }
 
     @media ($large) {
-        padding: 10px 0;
+        padding: 12px 0;
     }
 
     @media ($xlarge) {

@@ -46,16 +46,17 @@
 .section-title-wrapper .section-subtitle {
     font-size: 18px;
     margin-bottom: 0;
+    font-weight: 500;
 
     @media ($medium) {
-        font-size: 19px;
-    }
-
-    @media ($large) {
         font-size: 20px;
     }
 
-    @media ($xlarge) {
+    @media ($large) {
         font-size: 22px;
+    }
+
+    @media ($xlarge) {
+        font-size: 24px;
     }
 }

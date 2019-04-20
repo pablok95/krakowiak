@@ -1,130 +1,134 @@
 .horizontal-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .horizontal-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 25px;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(255,255,255,0), #fff);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), #fff);
 }
 
 .horizontal-wrapper::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-color: #fff;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #fff;
+  z-index: 1;
 }
 
 #see-other-rooms .secondary-title {
-    text-align: center;
+  text-align: center;
 }
 
 #see-other-rooms .horizontal {
-    position: relative;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    user-select: none;
-    padding: 15px 0;
-    cursor: pointer;
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  padding: 15px 0;
+  cursor: pointer;
+
+  @media ($large) {
+      padding: 20px 0;
+  }
 }
 
 #see-other-rooms .horizontal.active {
-    cursor: grabbing;
+  cursor: grabbing;
 }
 
 .horizontal .item {
-    display: inline-block;
-    position: relative;
-    width: 260px;
-    height: 150px;
-    margin-right: 25px;
-    background-color: #fbfbfb;
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: inline-block;
+  position: relative;
+  width: 260px;
+  height: 150px;
+  margin-right: 25px;
+  background-color: #fbfbfb;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    @media ($large) {
-        width: 320px;
-        height: 180px;
-        margin-right: 60px;
-    }
+  @media ($large) {
+    width: 320px;
+    height: 180px;
+    margin-right: 60px;
+  }
 }
 
 .horizontal .item::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(180deg, rgba(24, 24, 37, .0), $primary-bg-color);
-    transition: $faster-transition;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(24, 24, 37, 0), $primary-bg-color);
+  transition: $faster-transition;
 }
 
 .horizontal .item:hover::after {
-    height: 100%;
+  height: 100%;
 }
 
 .horizontal .item:last-of-type {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .horizontal .item-content {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: #ffffff;
-    z-index: 1;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #ffffff;
+  z-index: 1;
 }
 
 .horizontal .title {
-    margin-bottom: 0;
-    font-family: $font-serif;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 1.2;
-    white-space: normal;
+  margin-bottom: 0;
+  font-family: $font-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.2;
+  white-space: normal;
 
-    @media ($medium) {
-        font-size: 18px;
-    }
+  @media ($medium) {
+    font-size: 18px;
+  }
 
-    @media ($large) {
-        font-size: 20px;
-    }
+  @media ($large) {
+    font-size: 20px;
+  }
 }
 
 .horizontal .price {
-    font-family: $font-serif;
-    margin-right: 8px;
+  font-family: $font-serif;
+  margin-right: 8px;
 }
 
 .horizontal .measurement {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .horizontal .room-btn {
-    position: absolute;
-    bottom: -10px;
-    right: -5px;
-    z-index: 1;
+  position: absolute;
+  bottom: -10px;
+  right: -5px;
+  z-index: 1;
 
-    @media ($medium) {
-        bottom: -15px;
-        right: -10px;
-    }
+  @media ($medium) {
+    bottom: -15px;
+    right: -10px;
+  }
 
-    @media ($xlarge) {
-        bottom: -20px;
-        right: -15px;
-    }
+  @media ($xlarge) {
+    bottom: -20px;
+    right: -15px;
+  }
 }
