@@ -8,7 +8,7 @@ const OurOffer = ({lang, title, subtitle}) => {
     const content = getContent(roomsContent, lang);
 
     return (
-        <section id="our-offer">
+        <section id="our-offer" className="main-padding">
             <div className="container">
                 <div className="our-offer-content">
                     <SectionTitleWrapper title={title} subtitle={subtitle} />

@@ -9,3 +9,15 @@
 #section-with-background .section-with-bgc-list {
     text-align: center;
 }
+
+#section-with-background .list-item {
+    margin-bottom: 5px;
+
+    @media ($large) {
+        margin-bottom: 10px;
+    }
+}
+
+#section-with-background .list-item:last-of-type {
+    margin-bottom: 0;
+}

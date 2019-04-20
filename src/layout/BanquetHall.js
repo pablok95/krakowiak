@@ -4,7 +4,7 @@ import image from '../images/home-page/salabankietowa.png';
 
 const BanquetHall = ({ content }) => {
     return (
-        <section id="banquet-hall" className="party-room">
+        <section id="banquet-hall" className="party-room main-padding-bottom">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-6">

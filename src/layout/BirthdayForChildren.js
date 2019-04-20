@@ -4,7 +4,7 @@ import image from '../images/home-page/urodzinydladzieci.png';
 
 const BirthdayForChildren = ({ content }) => {
     return (
-        <section id="birthday-for-children" className="party-room">
+        <section id="birthday-for-children" className="party-room main-padding-bottom">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-sm-10 offset-sm-1 col-md-5 offset-xl-1">

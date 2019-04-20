@@ -6,7 +6,7 @@ const OfferSection = ({ section, imageSrc }) => {
     const sectionTxtContent = Object.keys(section).map((item, index) => <p key={index} className="text">{section[item]}</p>);
 
     return (
-        <section id="offer-section">
+        <section id="offer-section" className="main-padding">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-sm-10 offset-sm-1 col-md-5 col-xl-4 offset-xl-2">

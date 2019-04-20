@@ -18,7 +18,7 @@ const WhatMakeUsDiffrent = ({ content }) => {
     })
 
     return (
-        <section id="what-make-us-diffrent">
+        <section id="what-make-us-diffrent" className="main-padding">
             <div className="container">
                 <SectionTitleWrapper title={content.title} />
                 <div className="row">

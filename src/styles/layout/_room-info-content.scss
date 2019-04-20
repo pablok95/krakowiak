@@ -1,0 +1,45 @@
+#room-info-content {
+    height: 100%;
+}
+
+#room-info-content .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 340px;
+
+    @media ($medium) {
+        max-width: none;
+    }
+
+    @media ($large) {
+        padding-left: 20px;
+    }
+}
+
+#room-info-content .title {
+    margin: 5px 0 2px 0;
+    font-family: $font-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+#room-info-content .info {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+
+    .price {
+        font-family: $font-serif;
+        font-size: 18px;
+        color: $secondary-txt-color;
+        margin-right: 10px;
+    }
+}
+
+#room-info-content .text {
+    text-align: left;
+}

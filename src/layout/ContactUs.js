@@ -14,7 +14,7 @@ const ContactUs = ({ lang }) => {
     const linkPhone3 = `tel:${content.link_phone3}`;
 
     return (
-        <section id="contact-us" style={{ background: `url(${backgroundImg})` }}>
+        <section id="contact-us" className="main-padding" style={{ background: `url(${backgroundImg})` }}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -24,7 +24,7 @@ const ContactUs = ({ lang }) => {
 
                 <div className="row">
                     <div className="col-10 offset-1 col-sm-5 offset-sm-0 col-md-5 offset-md-1">
-                        <div className="contact-data-wrapper">
+                        <div className="contact-data-wrapper elem-padding-bottom">
                             <div className="icon-wrapper">
                                 <i className="fas fa-phone-volume"></i>
                             </div>
@@ -35,7 +35,7 @@ const ContactUs = ({ lang }) => {
                         </div>
                     </div>
                     <div className="col-10 offset-1 col-sm-7 offset-sm-0 col-md-6 offset-md-0">
-                        <div className="contact-data-wrapper">
+                        <div className="contact-data-wrapper elem-padding-bottom">
                             <div className="icon-wrapper">
                                 <i className="fas fa-map-marker-alt"></i>
                             </div>
@@ -46,7 +46,7 @@ const ContactUs = ({ lang }) => {
                     </div>
                 </div>
 
-                <div className="row contact-other-wrapper">
+                <div className="row contact-other-wrapper elem-padding-bottom">
                     <div className="col-12 col-md-5 offset-md-1 col-lg-5 offset-lg-1">
                         <div className="content">
                             <span className="contact-label">{groupReservations}:</span>

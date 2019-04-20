@@ -18,7 +18,7 @@ const AboutPage = props => {
     const { header, section, offerSection } = content;
 
     const offerListItems = offerSection.items.map((item, index) =>
-        <li key={index}>* {item.name}</li>
+        <li className="list-item" key={index}>* {item.name}</li>
     );
 
     const htmlContent = (

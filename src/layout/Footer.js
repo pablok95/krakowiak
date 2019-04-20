@@ -14,11 +14,11 @@ const Footer = props => {
     );
 
     return (
-        <footer id="footer">
+        <footer id="footer" className="main-padding">
             <div className="container">
                 <div className="content">
-                    <img className="image" src={logo} alt="logo" />
-                    <ul className="footer-nav-items">
+                    <img className="image elem-padding-bottom" src={logo} alt="logo" />
+                    <ul className="footer-nav-items elem-padding-bottom">
                         {navListItems}
                     </ul>
                     <span className="footer-info">

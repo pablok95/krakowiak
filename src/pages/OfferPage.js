@@ -19,7 +19,10 @@ const OfferPage = props => {
     const { header, offerSection, section } = content;
 
     const offerListItems = offerSection.items.map((item, index) =>
-        <li key={index}>* {item.name}</li>
+        // <li className="list-item" key={index}>* {item.name}</li>
+        <li className="what-make-us-diffrent-name" dangerouslySetInnerHTML={{
+            __html: "* " + item.name
+        }} />
     );
 
     const htmlContent = (
@@ -28,7 +31,9 @@ const OfferPage = props => {
             <ul className="section-with-bgc-list">
                 {offerListItems}
             </ul>
-            <p className="text">{offerSection.info}</p>
+            <p className="text" dangerouslySetInnerHTML={{
+                __html: offerSection.info
+            }} />
         </div>
     );
 

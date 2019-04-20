@@ -1,0 +1,59 @@
+#rooms .room-item {
+    padding: 15px 0;
+
+    @media ($small) {
+        padding: 25px 0;
+    }
+
+    @media ($medium) {
+        padding: 40px 0;
+    }
+
+    @media ($large) {
+        padding: 60px 0;
+    }
+
+    @media ($xlarge) {
+        padding: 80px 0;
+    }
+}
+
+#rooms .room-item:nth-child(even) {
+    background-color: $even-room-bg;
+}
+
+#rooms .img-wrapper {
+    height: 200px;
+    overflow: hidden;
+
+    @media ($medium) {
+        height: 100%;
+        min-height: 180px;
+    }
+
+    @media ($large) {
+        min-height: 210px;
+    }
+}
+
+#rooms .img-wrapper {
+    margin: 0 auto;
+    max-width: 340px;
+
+    @media ($medium) {
+        max-width: none;
+    }
+}
+
+#rooms .image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+
+#rooms .btn {
+    margin: 0 0 0 auto;
+}
