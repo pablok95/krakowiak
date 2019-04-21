@@ -1,23 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SectionTitleWrapper from '../components/SectionTitleWrapper';
+import Map from '../components/Map';
 
 
-class FindUs extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() {
-        return (
-            <section id="find-us" className="main-padding">
-                <SectionTitleWrapper title={this.props.title} />
+const FindUs = ({title}) => {
+    return (
+        <section id="find-us" className="main-padding">
+            <SectionTitleWrapper title={title} />
 
-                <div className="map-wrapper">
-                    Mapa
-                </div>
-            </section>
-        );
-    }
+            <div className="map-wrapper">
+                <Map />
+            </div>
+        </section>
+    );
 }
 
 export default FindUs;

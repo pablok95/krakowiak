@@ -1,0 +1,40 @@
+.map-wrapper {
+  position: relative;
+}
+
+.map-wrapper::before,
+.map-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+
+  @media ($large) {
+      height: 100px;
+  }
+}
+
+.map-wrapper::before {
+  top: 0;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0), #fff);
+}
+
+.map-wrapper::after {
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), #fff);
+}
+
+.map-height {
+  height: 300px;
+  opacity: 0.9;
+
+  @media ($large) {
+    height: 600px;
+  }
+
+  @media ($xlarge) {
+    height: 700px;
+  }
+}
