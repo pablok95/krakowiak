@@ -12,6 +12,7 @@ import BanquetHall from '../layout/BanquetHall';
 import BirthdayForChildren from '../layout/BirthdayForChildren';
 import ContactUs from '../layout/ContactUs';
 import Welcome from '../layout/Welcome';
+import Gallery from '../components/Gallery';
 
 class HomePage extends Component {
 
@@ -50,6 +51,7 @@ class HomePage extends Component {
                     <OurOffer lang={this.props.lang} title={content.ourOffer.title} subtitle={content.ourOffer.subtitle} />
                     <BanquetHall content={content.banquetHall} />
                     <BirthdayForChildren content={content.birthdayForChildren} />
+                    <Gallery />
                     <ContactUs lang={this.props.lang} />
                 </main>
             </div>
