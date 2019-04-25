@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitleWrapper from '../components/SectionTitleWrapper';
-import Map from '../components/Map';
+import MyMap from '../components/MyMap';
 
 
 const FindUs = ({title}) => {
@@ -9,7 +9,7 @@ const FindUs = ({title}) => {
             <SectionTitleWrapper title={title} />
 
             <div className="map-wrapper">
-                <Map />
+                <MyMap />
             </div>
         </section>
     );

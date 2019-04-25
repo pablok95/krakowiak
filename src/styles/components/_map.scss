@@ -1,40 +1,58 @@
 .map-wrapper {
-  position: relative;
+    position: relative;
 }
 
-.map-wrapper::before,
-.map-wrapper::after {
-  content: "";
-  position: absolute;
-  height: 25px;
-  width: 100%;
-  left: 0;
-  z-index: 1;
-
-  @media ($large) {
-      height: 100px;
-  }
+.map-wrapper::after, .map-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 9;
 }
 
 .map-wrapper::before {
-  top: 0;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0), #fff);
+    background: linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,1));
+    top: 0;
 }
 
 .map-wrapper::after {
     bottom: 0;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), #fff);
+    background: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,1));
 }
 
-.map-height {
-  height: 300px;
-  opacity: 0.9;
+.map-wrapper {
+    height: 400px;
 
-  @media ($large) {
-    height: 600px;
-  }
+    @media ($large) {
+        height: 500px;
+    }
+}
 
-  @media ($xlarge) {
-    height: 700px;
-  }
+
+.map .marker-map {
+    position: relative;
+    color: $primary-bg-color;
+    font-size: 32px;
+    overflow: hidden;
+
+    @media ($large) {
+        font-size: 48px;
+    }
+}
+
+.map .marker-map::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 10px;
+    background-color: $basic-color;
+    z-index: -1;
+
+    @media ($large) {
+        height: 20px;
+    }
 }

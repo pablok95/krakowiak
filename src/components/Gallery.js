@@ -4,14 +4,15 @@ import image1 from '../images/gallery/1.png';
 import image2 from '../images/gallery/2.png';
 import image3 from '../images/gallery/3.png';
 import image4 from '../images/gallery/4.png';
-import image5 from '../images/gallery/5.png';
+// import image5 from '../images/gallery/5.png';
 
-const images = [image1, image2, image3, image4, image5];
+const images = [image1, image2, image3, image4];
 
 class Gallery extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            imagesLength: images.length-1,
             isDown: false,
             clientXDown: null,
             leftSlide: 0,
@@ -89,17 +90,17 @@ class Gallery extends Component {
 
     scrollRight = () => {
         this.setState({
-            leftSlide: this.state.leftSlide !== 4 ? this.state.leftSlide + 1 : 0,
-            centerSlide: this.state.centerSlide !== 4 ? this.state.centerSlide + 1 : 0,
-            rightSlide: this.state.rightSlide !== 4 ? this.state.rightSlide + 1 : 0,
+            leftSlide: this.state.leftSlide !== 0 ? this.state.leftSlide - 1 : this.state.imagesLength,
+            centerSlide: this.state.centerSlide !== 0 ? this.state.centerSlide - 1 : this.state.imagesLength,
+            rightSlide: this.state.rightSlide !== 0 ? this.state.rightSlide - 1 : this.state.imagesLength,
         });
     }
 
     scrollLeft = () => {
         this.setState({
-            leftSlide: this.state.leftSlide !== 0 ? this.state.leftSlide - 1 : 4,
-            centerSlide: this.state.centerSlide !== 0 ? this.state.centerSlide - 1 : 4,
-            rightSlide: this.state.rightSlide !== 0 ? this.state.rightSlide - 1 : 4,
+            leftSlide: this.state.leftSlide !== this.state.imagesLength ? this.state.leftSlide + 1 : 0,
+            centerSlide: this.state.centerSlide !== this.state.imagesLength ? this.state.centerSlide + 1 : 0,
+            rightSlide: this.state.rightSlide !== this.state.imagesLength ? this.state.rightSlide + 1 : 0,
         });
     }
 
