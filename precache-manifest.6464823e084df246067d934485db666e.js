@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/krakowiak/static/media/salabankietowa.2c4eb6c8.png"
   },
   {
-    "revision": "5c6764dba065c778233a",
+    "revision": "7b695357fde6dae3c986",
     "url": "/krakowiak/static/css/main.b7c30c2d.chunk.css"
   },
   {
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "/krakowiak/static/media/pokoj5.7682c3a6.png"
   },
   {
-    "revision": "5c6764dba065c778233a",
-    "url": "/krakowiak/static/js/main.dbf87d08.chunk.js"
+    "revision": "7b695357fde6dae3c986",
+    "url": "/krakowiak/static/js/main.fc787592.chunk.js"
   },
   {
     "revision": "a3bef338e653ff7c38d936e336e9b3ed",
@@ -140,19 +140,19 @@ self.__precacheManifest = [
     "url": "/krakowiak/static/media/Poppins-Regular.dd1aed50.ttf"
   },
   {
-    "revision": "5bb3128376ff7ca534d894e470f1c2e9",
-    "url": "/krakowiak/static/media/Poppins-SemiBold.5bb31283.ttf"
-  },
-  {
     "revision": "28bc024aa3164e0b0ff2d709f17b333f",
     "url": "/krakowiak/static/media/Poppins-Medium.28bc024a.ttf"
+  },
+  {
+    "revision": "5bb3128376ff7ca534d894e470f1c2e9",
+    "url": "/krakowiak/static/media/Poppins-SemiBold.5bb31283.ttf"
   },
   {
     "revision": "c494ce60358668159e19",
     "url": "/krakowiak/static/css/2.42af4b9c.chunk.css"
   },
   {
-    "revision": "b5385b29c6bbf5721b19896732957eff",
+    "revision": "b008848217e667facfe3cf498a17da93",
     "url": "/krakowiak/index.html"
   }
 ];

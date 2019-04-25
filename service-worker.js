@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/krakowiak/precache-manifest.1369ad8e487395a48efe011e1d4a90c8.js"
+  "/krakowiak/precache-manifest.6464823e084df246067d934485db666e.js"
 );
 
 workbox.clientsClaim();
