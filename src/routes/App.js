@@ -17,7 +17,7 @@ class App extends Component {
 
     return (
       <div className="App" onScroll={this.handleScroll}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Header />
           <Navigation lang={this.state.lang} />
           <Page lang={this.state.lang} />
