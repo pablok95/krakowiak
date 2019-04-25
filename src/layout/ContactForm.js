@@ -45,6 +45,7 @@ class ContactForm extends Component {
 
     handleSumbmit = (e) => {
         e.preventDefault();
+        alert('wysyłanie formularza nie jest w tej chwili możliwe. Prosimy spróbować ponownie');
     }
 
     render() {
@@ -92,11 +93,6 @@ class ContactForm extends Component {
                         <div className="btn-text">{content.btnText1}</div>
                         <div className="btn-arrow"><i className="icon-arrow"></i></div>
                     </button>
-
-                    {/* <button className="btn-1">
-                        {content.btnText1}
-                        <div className="btn-with-arrow"><i className="arrow"></i></div>
-                    </button> */}
                 </form>
             </div>
         );

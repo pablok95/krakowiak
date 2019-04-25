@@ -40,7 +40,7 @@ const ContactUs = ({ lang }) => {
                                 <i className="fas fa-map-marker-alt"></i>
                             </div>
                             <p className="contact-data-info">
-                                <span className="address">{short_address}</span>
+                                <a className="link address" target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/4tZebxf9GaMsTPaS8">{short_address}</a>
                             </p>
                         </div>
                     </div>
