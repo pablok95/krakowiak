@@ -1,0 +1,16 @@
+#error-page .content {
+    text-align: center;
+}
+
+#error-page .section-title {
+    font-size: 48px;
+    font-weight: 700;
+
+    @media ($large) {
+        font-size: 70px;
+    }
+}
+
+#error-page .text {
+    text-align: center;
+}

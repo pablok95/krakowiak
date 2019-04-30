@@ -53,6 +53,7 @@
 #contact-form .form-agree-wrapper {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 15px 0 25px 0;
 
@@ -91,4 +92,37 @@
 
 #contact-form .btn-1 {
     margin: 0 0 0 auto;
+}
+
+#contact-form .error-text-content {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: $font-sans-serif;
+    font-size: 12px;
+    color: #FF9494;
+}
+
+#contact-form .error-text-content::before {
+    content: '*';
+    position: absolute;
+    left: -10px;
+    top: -4px;
+    color: #FF9494;
+    font-size: 18px;
+}
+
+.statment-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    min-height: 100px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: $primary-bg-color;
+    border: 1px solid $basic-color;
+    z-index: 99;
 }

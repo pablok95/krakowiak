@@ -20,5 +20,13 @@ export const contactUsContent = {
         email: 'krakowiaktravel@gmail.com',
         short_address: 'J.Smoleńskiego 110',
         long_address: 'ul. Armii Krajowej 9-9a, 30-150 Kraków',
+
+        errors: {
+            firstLastNameIncorrect: 'Imię i nazwisko muszą mieć więcej niż 4 znaki',
+            phoneIncorrect: 'Podaj minimum 9 cyfr',
+            emailIncorrect: 'Podaj prawidłowy adres email',
+            messageIncorrect: 'Podaj mininum 10 znaków',
+            agreementIncorrect: 'Zaakceptuj politykę prywatności, jeśli zgadzasz się na wysłanie tej wiadomości.',
+        }
     },
 };

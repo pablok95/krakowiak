@@ -77,3 +77,12 @@
   from {transform: translate(200%, -8px);}
   to {transform: translate(0, -8px);}
 }
+
+
+.page-margin {
+    margin-top: 100px;
+
+    @media ($large) {
+        margin-top: 150px;
+    }
+}
