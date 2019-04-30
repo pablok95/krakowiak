@@ -4,20 +4,20 @@ self.__precacheManifest = [
     "url": "/krakowiak/static/media/salabankietowa.2c4eb6c8.png"
   },
   {
-    "revision": "7b695357fde6dae3c986",
-    "url": "/krakowiak/static/css/main.b7c30c2d.chunk.css"
+    "revision": "c8468920b386aa7e0767",
+    "url": "/krakowiak/static/css/main.0e33877d.chunk.css"
   },
   {
     "revision": "c2b62eb834886467897f",
     "url": "/krakowiak/static/js/runtime~main.c93c6460.js"
   },
   {
-    "revision": "922cb3bc86ec0568c82525e315387021",
-    "url": "/krakowiak/static/media/Poppins-Bold.922cb3bc.ttf"
+    "revision": "28bc024aa3164e0b0ff2d709f17b333f",
+    "url": "/krakowiak/static/media/Poppins-Medium.28bc024a.ttf"
   },
   {
-    "revision": "c494ce60358668159e19",
-    "url": "/krakowiak/static/js/2.4306dd17.chunk.js"
+    "revision": "3a9e7ac903b725824c35",
+    "url": "/krakowiak/static/js/2.c50d12af.chunk.js"
   },
   {
     "revision": "c28af3c735a157a610cf1549a97ae225",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "/krakowiak/static/media/pokoj5.7682c3a6.png"
   },
   {
-    "revision": "7b695357fde6dae3c986",
-    "url": "/krakowiak/static/js/main.fc787592.chunk.js"
+    "revision": "c8468920b386aa7e0767",
+    "url": "/krakowiak/static/js/main.0479c79f.chunk.js"
   },
   {
     "revision": "a3bef338e653ff7c38d936e336e9b3ed",
@@ -140,19 +140,19 @@ self.__precacheManifest = [
     "url": "/krakowiak/static/media/Poppins-Regular.dd1aed50.ttf"
   },
   {
-    "revision": "28bc024aa3164e0b0ff2d709f17b333f",
-    "url": "/krakowiak/static/media/Poppins-Medium.28bc024a.ttf"
+    "revision": "922cb3bc86ec0568c82525e315387021",
+    "url": "/krakowiak/static/media/Poppins-Bold.922cb3bc.ttf"
   },
   {
     "revision": "5bb3128376ff7ca534d894e470f1c2e9",
     "url": "/krakowiak/static/media/Poppins-SemiBold.5bb31283.ttf"
   },
   {
-    "revision": "c494ce60358668159e19",
+    "revision": "3a9e7ac903b725824c35",
     "url": "/krakowiak/static/css/2.42af4b9c.chunk.css"
   },
   {
-    "revision": "b008848217e667facfe3cf498a17da93",
+    "revision": "d192128718578ea14ab21bb1d75b7b23",
     "url": "/krakowiak/index.html"
   }
 ];
